@@ -1,30 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
 
-
+canvas {
+  position: absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+    }
 h1 {
+
+  position: fixed;
   margin: 0;
   text-align:center;
   color: white;
-  font-size: 200px;
+  font-size: 130px;
   font-family: 'Teko', sans-serif;
   text-shadow: -10px 10px 0px rgb(71, 51, 130),
                    -20px 20px 0px rgb(48, 38, 77),
                    -30px 30px 0px #3b315c;
 }
 h1:hover {
+  cursor:wait;
   text-shadow: 10px -10px 0px rgb(71, 51, 130),
                    20px -20px 0px rgb(48, 38, 77),
                    30px -30px 0px #432699,
-                   30px -30px 0px #44327a,
-                   40px -40px 0px #413075,
-                   50px -50px 0px #3b315c;
+                   30px -30px 0px #44327a;
 }
 #fbr{
+  margin-top: -10px;
   color: white;
   font-size: 60px;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
 }
 #sscb{
   font-size: 20px;
@@ -34,18 +42,13 @@ h1:hover {
 }
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-html, body{
-  height: 100%;
-  font-weight: 800;
-}
-
 body{
-  background: #030321;
+  background-attachment: fixed;
   font-family: Arial;
 }
 svg {
     display: block;
-    font: 10.5em 'Montserrat';
+    font: 9.5em 'Montserrat';
     width: 960px;
     height: 300px;
     margin: 0 auto;
@@ -87,4 +90,7 @@ svg {
 
 @keyframes stroke-offset{
     100% {stroke-dashoffset: -35%;}
+}
+h1,h2,h3,svg{
+  position:relative;
 }
